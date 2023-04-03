@@ -1,8 +1,11 @@
+from typing import Optional
+
 from aredis_om import (
     EmbeddedJsonModel,
     Field,
     JsonModel
 )
+
 
 # Product Models
 class ProductMetadata(EmbeddedJsonModel):
@@ -15,8 +18,10 @@ class ProductMetadata(EmbeddedJsonModel):
     season: str = Field(index=True)
     year: int = Field(index=True)
     usage: str = Field(index=True)
-    image_url: str
-    brand: str = Field(index=True)
+    text: str = Optional[str]
+    image_url: Optional[str]
+    brand: Optional[str]
+
 
 class Product(JsonModel):
     product_id: int = Field(index=True)

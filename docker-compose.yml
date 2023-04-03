@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  redis-vector-db:
+    image: redis/redis-vector-db:latest
+    volumes:
+      - ./redis-data:/data/
+    ports:
+      - 6379:6379
+      - 8001:8001
+
+volumes:
+  redis-vector-db:

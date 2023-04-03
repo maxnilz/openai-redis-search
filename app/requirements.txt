@@ -5,3 +5,4 @@ uvicorn
 aiofiles
 redis-om
 pandas
+redis

@@ -7,3 +7,9 @@ images
 .ipynb_checkpoints
 product_metadata.json
 product_vectors.json
+product_vectors_openai.json
+out
+.idea
+.vscode
+*.log
+kk
