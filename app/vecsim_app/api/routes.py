@@ -210,7 +210,7 @@ def get_embeddings_from_openai(query: str) -> bytes:
 
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + "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"
+        'Authorization': 'Bearer ' + "your openai api key"
     }
 
     data = {
