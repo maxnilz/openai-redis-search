@@ -1,6 +1,6 @@
 # OpenAI + Redis Vector Search Demo Application
 
-This demo showcases the vector search similarity (VSS) with huggenface and OpenAI embedings.
+This demo showcases the vector search similarity (VSS) with huggenface and OpenAI-GPT4 embedings.
 
 ![vss-demo](vss-demo.gif)
 
@@ -66,17 +66,12 @@ This app was built as a Single Page Application (SPA) with the following compone
 
 - **[Redis Stack](https://redis.io/docs/stack/)**: Vector database + JSON storage
 - **[FastAPI](https://fastapi.tiangolo.com/)** (Python 3.8)
-  - JWT authentication using [OAuth2 "password
-    flow"](https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/) and
-    PyJWT
 - **[Pydantic](https://pydantic-docs.helpmanual.io/)** for schema and validation
 - **[React](https://reactjs.org/)** (with Typescript)
 - **[Redis OM](https://redis.io/docs/stack/get-started/tutorials/stack-python/)** for ORM
 - **[Docker Compose](https://docs.docker.com/compose/)** for development
 - **[MaterialUI](https://material-ui.com/)** for some UI elements
 - **[React-Bootstrap](https://react-bootstrap.github.io/)** for some UI elements
-- **[react-admin](https://github.com/marmelab/react-admin)** for the admin dashboard
-  - Using the same token based authentication as FastAPI backend (JWT)
 - **[Pytorch/Img2Vec](https://github.com/christiansafka/img2vec)** and **[Huggingface Sentence Transformers](https://huggingface.co/sentence-transformers)** for vector embedding creation
 
 Some inspiration was taken from this [Cookiecutter project](https://github.com/Buuntu/fastapi-react)
@@ -86,5 +81,6 @@ and turned into a SPA application instead of a separate front-end server approac
 
 This is project is forked from https://github.com/RedisVentures/redis-product-search, the major changes are:
 
+- Fix issues and make the code runable in local
 - Removed unused codes
 - Add OpenAI embeddings from comparison

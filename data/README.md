@@ -4,8 +4,8 @@
 The application uses a static dataset of products from Kaggle. There are two
 versions that can be used for the demo
 
- - [Small](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset) (~.5 GB)
- - [Large](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small) (~25 GB)
+ - [Large](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset) (~25 GB)
+ - [Small](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small) (~.5 GB)
 
 
 The small dataset is currently used so that the container remains small but the process is similar for the
